@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"
 import Header from "./components/Header" 
 import About from "./components/About"
@@ -26,9 +26,7 @@ function App() {
 
         <Route path="/cardapio" element={
           <>
-            <Navbar />
             <MenuPage />
-            <Footer />
           </>
         } />
       </Routes>
